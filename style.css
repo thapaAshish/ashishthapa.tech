@@ -20,14 +20,32 @@ body{
   background-color:#2d2d30;;
   width:25%;
   height:100%;
+  position:fixed;
+
+}
+
+.content{
+  margin-left: 25%;
+  padding:10px;
+
+}
+.profile{
+
+  display: block;
+  width:10%;
+  height:170px;
+  border-radius: 10%;
+  left:27%;
+  bottom:190px;
   position:absolute;
 
 }
-.content{
-  margin-left: 25%;
-  
-}
 
+.cover{
+ width:70%;
+ height:500px;
+ position:relative;
+}
 
 .navbar li a{
   display:block;
@@ -69,4 +87,33 @@ body{
 
 .socialLinks{
 
+}
+.socialLinks li a{
+  margin-top: 20px;
+}
+@media screen and (max-width:1200px){
+  .cover{
+    height: 500px;
+  }
+}
+@media screen and (max-width:900px){
+.profile{
+  left:2%;
+}
+.navbar{
+  width:100%;
+  position:relative;
+}
+.navbar li{
+  float:left;
+}
+.currentlyReading{
+  display:none;
+}
+.socialLinks{
+  display:none;
+}
+.content{
+  margin-left: 0%;
+}
 }
